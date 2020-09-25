@@ -11,6 +11,8 @@ https://steamcommunity.com/id/thezealot35/
 
 # Notes:
 
+First and foremost, make sure the pickpocket folder makes itself into your darkrpmodification/lua/darkrp_modules
+
 There is no UI to the system, just a simple command
 
 /rob, /mug or /pickpocket
