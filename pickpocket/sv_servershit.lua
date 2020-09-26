@@ -78,7 +78,7 @@ local function RobPlayer(ply, args)
     end
 
     --the following things are preparing the shit, could probably make it better config wise
-    for Job, PickpocketTime in ipairs(ZQPickpocket.PickpocketJobTimes) do
+    for Job, PickpocketTime in pairs(ZQPickpocket.PickpocketJobTimes) do
         if ply:Team() == Job then
             ply.PPS_Timer = PickpocketTime
         else
@@ -96,7 +96,7 @@ local function RobPlayer(ply, args)
         HandleRob(ply)
     end)
 
-    for k, v in ipairs(ZQPickpocket.PickpocketJobCD) do
+    for k, v in pairs(ZQPickpocket.PickpocketJobCD) do
         if ZQPickpocket.PickpocketJobCD == k then
             ply.RobCD = v
         else
